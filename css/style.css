@@ -1,5 +1,59 @@
 /* Put your CSS here */
-body {font-family: Helvetica Neue; margin: 0 auto;}
-container {width: 800px;}
+body {font-family: Helvetica Neue; margin: 0 auto; color: #333;}
 
+a {color: #777; text-decoration: none;}
+a:hover {color: #F1E26D;}
+
+.container {width: 608px; margin: 0 auto; padding: 60px 20px; text-align: center;}
+.meta {text-transform: uppercase; font-size: 12px; letter-spacing: .1em;}
+
+article {padding: 18px 0;}
+
+.inline-list {list-style: none; margin: 0; padding: 0;}
+.inline-list li {display: inline-block;}
+
+/* Twitter */
+#tweet p {font-family: 'Playfair Display'; text-align: center; font-weight: 500; font-size: 20px;}
+
+
+/* Instagrams */
+#instagram {margin: 0 auto; text-align: center;}
 .one-gram {display: inline;}
+
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license
+*/
+
+.animated {
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}

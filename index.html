@@ -4,19 +4,37 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
     <script type="text/javascript" src="js/sheetsee.js"></script>
+    <script type="text/javascript" src="js/socialbits.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title> </title>
   </head>
   <body>
     <!-- HTML -->
     <div class="container">
-      <div id="instagram"></div>
+      <header>
+        <h1>Hello</h1>
+        <h3>I am this person I do these things.</h3>
+        <ul class="inline-list meta">
+          <li><a href="" target="_blank">Twitter</a></li>
+          <li><a href="" target="_blank">Instagram</a></li>
+          <li><a href="" target="_blank">Facebook</a></li>
+        </ul>
+      </header>
+      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
+      <article id="instagram"><span class="load flash animated">LOADING...</span></article>
     </div>
 
     <!-- Templates -->
     <script id="instagram" type="text/html">
       {{#rows}}
         <div class="one-gram"><img src="{{instasource}}" width="200"></div>
+      {{/rows}}
+    </script>
+
+    <script id="tweet" type="text/html">
+      {{#rows}}
+        <span class="meta">{{date}}</span>
+        <p>{{{tweet}}}</p>
       {{/rows}}
     </script>
 
@@ -29,98 +47,6 @@
           Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
           Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
         })
-
-        function buildInsta(data) {
-          // var compiledTemplate = Handlebars.templates['instagram']
-          // var html = compiledTemplate({"rows": getLast(data,3)}, {});
-          // document.getElementById('instagram').innerHTML = html
-          var lastthree = getLast(data,3)
-          console.log(lastthree)
-          var instagram = Sheetsee.ich.instagram({
-            "rows": getLast(data,3)
-          }, {})
-          console.log(instagram)
-          document.getElementById('instagram').innerHTML = instagram
-
-        }
-
-        function buildTweet(data) {
-          // var lastTweet = data[data.length - 1]
-          // var date = lastTweet.date
-          // var parsedTweet = {
-          //   'tweet': findLinks(lastTweet),
-          //   'date': date }
-          // var template = Handlebars.templates['twitter']
-          // var html = template({"rows": parsedTweet}, {});
-          // document.getElementById('tweet').innerHTML = html
-        }
-
-        function getLast(array, howMany) {
-          start = array.length
-          cut = start - howMany
-          if (start < 12) {
-          return array
-          } else {
-            array = array.splice(cut)
-            return array.reverse()
-          }
-        }
-
-        // parse tweets
-        // move to sep. file
-
-        function findLinks(tweet) {
-          if (!tweet.tweet) return
-          var linkPattern = /(^|\s)((https?:\/\/)?[\w-]+(\.[\w-]+)+\.?(:\d+)?(\/\S*)?)/gi
-
-            if (!tweet.tweet.match(linkPattern)) {
-              return tweetMentions(tweet.tweet)
-            } else {
-              var links = tweet.tweet.match(linkPattern)
-              var linkLinks = linkLink(links)
-              var newTweet = injectLinks(tweet.tweet, links, linkLinks)
-              return tweetMentions(newTweet)
-            }
-        }
-
-        function tweetMentions(tweet, date) {
-          if (!tweet) return
-          var mentionPattern = /\B@[a-z0-9_-]+/gi
-
-          if (tweet.match(mentionPattern)) {
-            var mentions = tweet.match(mentionPattern)
-            var linkMentions = linkMention(mentions)
-            var newTweet = injectLinks(tweet, mentions, linkMentions)
-            return newTweet
-          } else { return tweet }
-        }
-
-        function linkMention(mentions) {
-          if (!mentions) return
-          var linkMentions = []
-          mentions.forEach(function(mention){
-            var wrap = "<a href='http://www.twittter.com/" + mention + "' target='_blank'>" + mention + "</a>"
-            linkMentions.push(wrap)
-          })
-          return linkMentions
-        }
-
-        function linkLink(links) {
-          if (!links) return
-          var linkLinks = []
-          links.forEach(function(link) {
-            link = '<a href="' + link + '" target="_blank">' + link + '</a>'
-            linkLinks.push(link)
-          })
-          return linkLinks
-        }
-
-        function injectLinks(tweet, mentions, linkMentions) {
-          for (var i = 0; i <= mentions.length; i++) {
-            tweet = tweet.replace(mentions[i], linkMentions[i])
-            if (i === mentions.length) return tweet
-          }
-        }
       </script>
 
   </body>
