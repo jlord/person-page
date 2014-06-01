@@ -4,7 +4,7 @@ body {font-family: Merriweather; margin: 0 auto; color: #333; border: 8px solid 
 a {color: #777; text-decoration: none;}
 a:hover {color: #CCFF26;}
 
-h4 {font-family: "open sans";}
+h4 {font-family: "Helvetica Neue", "Arial", sans-serif; font-weight: 500;}
 p {font-weight: 400;}
 
 article {padding: 8px 0;}
@@ -18,7 +18,7 @@ section {padding-top: 24px;}
 .load {font-family: "Helvetica Neue", "Arial", sans-serif; color: #CCFF26; font-weight: 900; border: 1px dashed #CCFF26; padding: 3px 4px; border-radius: 2px; opacity: .5;}
 .name {font-family: "Ceviche One"; font-size: 60px;}
 .tleft {text-align: left;}
-.half {max-width: 45%; vertical-align: top; display: inline-block;}
+.half {min-width: 270px; vertical-align: top; display: inline-block;}
 .right {float: right;}
 
 /* Twitter */
