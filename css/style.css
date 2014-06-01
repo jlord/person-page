@@ -1,24 +1,33 @@
-/* Put your CSS here */
-body {font-family: Helvetica Neue; margin: 0 auto; color: #333;}
+/* Stylez */
+body {font-family: Merriweather; margin: 0 auto; color: #333; border: 8px solid #CCFF26; line-height: 1.4em;}
 
 a {color: #777; text-decoration: none;}
-a:hover {color: #F1E26D;}
+a:hover {color: #CCFF26;}
 
-.container {width: 608px; margin: 0 auto; padding: 60px 20px; text-align: center;}
-.meta {text-transform: uppercase; font-size: 12px; letter-spacing: .1em;}
+h4 {font-family: "open sans";}
+p {font-weight: 400;}
 
-article {padding: 18px 0;}
+article {padding: 8px 0;}
+section {padding-top: 24px;}
 
+.container {width: 600px; margin: 0 auto; padding: 60px 20px;}
+.meta {text-transform: uppercase; font-family: "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .1em;}
+.meta a {border-bottom: 1px solid #CCFF26;}
 .inline-list {list-style: none; margin: 0; padding: 0;}
 .inline-list li {display: inline-block;}
+.load {font-family: "Helvetica Neue", "Arial", sans-serif; color: #CCFF26; font-weight: 900; border: 1px dashed #CCFF26; padding: 3px 4px; border-radius: 2px; opacity: .5;}
+.name {font-family: "Ceviche One"; font-size: 60px;}
+.tleft {text-align: left;}
+.half {max-width: 45%; vertical-align: top; display: inline-block;}
+.right {float: right;}
 
 /* Twitter */
-#tweet p {font-family: 'Courier New'; text-align: center; font-weight: 500; font-size: 20px;}
-
+#tweet p {font-size: 12px;}
 
 /* Instagrams */
-#instagram {margin: 0 auto; text-align: center;}
+#instagram {margin: 0 auto;}
 .one-gram {display: inline;}
+.one-gram img {border: 5px solid #fafafa;}
 
 
 /*!
@@ -26,12 +35,7 @@ Animate.css - http://daneden.me/animate
 Licensed under the MIT license
 */
 
-.animated {
--webkit-animation-duration: 1s;
-animation-duration: 1s;
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
-}
+.animated {-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
 
 @-webkit-keyframes flash {
   0%, 50%, 100% {
@@ -53,7 +57,4 @@ animation-fill-mode: both;
   }
 }
 
-.flash {
-  -webkit-animation-name: flash;
-  animation-name: flash;
-}
+.flash {-webkit-animation-name: flash; animation-name: flash;}
