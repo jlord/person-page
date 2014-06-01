@@ -4,6 +4,8 @@
 
 A simple one-page personal site with your Twitter and Instagram, from a spreadsheet using [IFTTT](http://www.ifttt.com).
 
+See the demo/template at [jlord.github.io/person-page](http://jlord.github.io/person-page).
+
 > In progress documentation
 
 ## Fork-n-Go (then some other things)
