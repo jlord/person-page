@@ -18,7 +18,7 @@ section {padding-top: 24px;}
 .load {font-family: "Helvetica Neue", "Arial", sans-serif; color: #CCFF26; font-weight: 900; border: 1px dashed #CCFF26; padding: 3px 4px; border-radius: 2px; opacity: .5;}
 .name {font-family: "Ceviche One"; font-size: 60px;}
 .tleft {text-align: left;}
-.half {min-width: 270px; vertical-align: top; display: inline-block;}
+.half {min-width: 270px; max-width: 350px; vertical-align: top; display: inline-block;}
 .right {float: right;}
 
 /* Twitter */
