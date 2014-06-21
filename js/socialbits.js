@@ -6,7 +6,6 @@ function buildInsta(data) {
 }
 
 function buildTweet(data) {
-  // data.slice(Math.max(data.length - 2, 1))
   var two = data.slice(Math.max(data.length - 2, 1)).reverse()
   var tweets = two.map(function(t) {
     var tweet = {tweet: findLinks(t)}
