@@ -14,7 +14,7 @@ margin-bottom: 0px;}
 
 p {font-size: 23px; line-height: 1.3em;}
 
-#instagram {margin: 0 auto; border-radius: 999; margin-top: 30px; margin-bottom: 30px; background: #F7F7F7; height: 150px; width: 150px;}
+#instagram {margin: 0 auto; border-radius: 999px; margin-top: 30px; margin-bottom: 30px; background: #F7F7F7; height: 150px; width: 150px;}
 .one-gram img {border-radius: 999px;}
 #instagram .load {position: relative; top: 43%;}
 .container {width: 500px; margin: 0 auto; overflow: auto;}
