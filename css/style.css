@@ -1,34 +1,35 @@
-/* Stylez */
-/*body {font-family: Quicksand, Merriweather; margin: 0 auto; color: #333; border: 8px solid #CCFF26; line-height: 1.4em;}
+body {font-family: Source Sans Pro; text-align: center; line-height: 1.2em; color: #333; margin: 0;}
+a {color: #96EBE1; text-decoration: none; }
 
-a {color: #777; text-decoration: none;}
-a:hover {border-bottom: 1px solid #CCFF26; color: #222}
+h1 {
+font-weight: 900;
+font-size: 50px;
+font-family: Playfair Display;
+padding: 0 20px 20px 20px;
+line-height: 1.2em;
+margin-top: 0;
+border-bottom: 2px solid #333;
+display: inline-block;
+margin-bottom: 0px;}
 
-h4 {font-family: Quicksand, Source Sans Pro, "Helvetica Neue", "Arial", sans-serif; font-weight: 700;}
-p {font-weight: 400;}
+p {font-size: 23px; line-height: 1.3em;}
 
-article {padding: 8px 0;}
-section {padding-top: 24px;}
-
-.container {width: 600px; margin: 0 auto; padding: 60px 20px;}
-.meta {text-transform: uppercase; font-family: Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}
-.meta a:hover {border-bottom: 1px solid #CCFF26; color: #222;}
+#instagram {margin: 0 auto; border-radius: 999; margin-top: 30px; margin-bottom: 30px; background: #F7F7F7; height: 150px; width: 150px;}
+.one-gram img {border-radius: 999px;}
+#instagram .load {position: relative; top: 43%;}
+.container {width: 500px; margin: 0 auto; overflow: auto;}
+.quote {font-weight: 900; font-size: 18px;}
+#tweet p {font-weight: 200; font-size: 18px;}
+#tweet p a {color: #777; font-weight: 200; text-decoration: underline;}
+#tweet p a:hover {color: #17FFE4;}
+#tweet {padding: 20px; margin: 0 auto; margin-top: 20px; background: #F7F7F7; border-radius: 2px; color: #777;}
+.meta {font-family: Courier New; text-transform: uppercase; font-size: 10px;}
+.load {color: #eee; letter-spacing: .2em; font-size: 12px; }
 .inline-list {list-style: none; margin: 0; padding: 0;}
-.inline-list li {display: inline-block;}
-.load {font-family: Quicksand, Source Sans Pro, "Helvetica Neue", "Arial", sans-serif; color: #CCFF26; font-weight: 900; border: 1px dashed #CCFF26; padding: 3px 4px; border-radius: 2px; opacity: .5;}
-.name {font-family: Quicksand, "Ceviche One"; font-size: 60px;}
-.tleft {text-align: left;}
-.half {min-width: 270px; max-width: 320px; vertical-align: top; display: inline-block;}
-.right {float: right;}*/
-
-/* Twitter */
-/*#tweet p {font-size: 12px;}*/
-
-/* Instagrams */
-/*#instagram {margin: 0 auto;}
-.one-gram {display: inline;}
-.one-gram img {border: 5px solid #fafafa;}*/
-
+.inline-list li {display: inline-block; }
+.inline-list li {padding-left: 20px;}
+.inline-list li a {padding: 2px 8px; border: 1px solid #96EBE1; border-radius: 2px; letter-spacing: .1em; text-transform: uppercase; font-weight: 400; font-size: 14px;}
+.inline-list li a:hover {background: #96EBE1; color: #fff;}
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -58,20 +59,3 @@ Licensed under the MIT license
 }
 
 .flash {-webkit-animation-name: flash; animation-name: flash;}
-
-body {font-family: Source Sans Pro; padding: 80px 0; line-height: 1.2em; border-left: 10px solid #A216FF; color: #333; margin: 0;}
-a {color: #A216FF; text-decoration: none; font-weight: 900;}
-
-h1 {font-weight: 900; font-size: 30px;}
-
-#instagram {display: inline-block;}
-.one-gram img {border-radius: 999;}
-.social-bits {padding: 20px;}
-.bio {max-width: 400px; padding-left: 20px; vertical-align: middle;}
-.container {width: 750px; overflow: auto; float: left; }
-#tweet p {font-weight: 400; font-size: 12px;}
-#tweet {display: inline-block; max-width: 300px; padding-left: 40px; overflow: auto; position: relative;}
-.meta {font-family: Courier New; text-transform: uppercase; font-size: 10px;}
-.load {color: #eee; letter-spacing: .2em; font-size: 12px;}
-.inline-list {list-style: none; margin: 0; padding: 0;}
-.inline-list li {display: inline-block;}
