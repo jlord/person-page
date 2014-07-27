@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
     <script type="text/javascript" src="js/sheetsee.js"></script>
     <script type="text/javascript" src="js/socialbits.js"></script>
@@ -13,44 +13,45 @@
   <body>
     <!-- HTML -->
     <div class="container">
-      <header>
-        <h1 class="name">Jane Smith</h1>
-        <p>This is a short bio about what I like and what I do.</p>
-        <ul class="inline-list meta">
-          <li><a href="http://www.twitter.com/" target="_blank">Twitter</a></li>
-          <li><a href="http://www.instagram.com/" target="_blank">Instagram</a></li>
-          <li><a href="http://www.github.com/" target="_blank">GitHub</a></li>
-        </ul>
-      </header>
-
-      <section>
-
-        <div class="half">
-          <h4><a href="http://www.instagram.com/" target="_blank">instagram/janesmith</a></h4>
+      <div class="social-bits">
+        <div class="">
+          <!-- <h4><a href="http://www.instagram.com/" target="_blank">instagram/janesmith</a></h4> -->
           <article id="instagram"><span class="load flash animated">LOADING...</span></article>
         </div>
 
-        <div class="half">
-          <h4><a href="http://www.twitter.com/" target="_blank">twitter/janesmith</a></h4>
+        <div class="">
+          <!-- <h4><a href="http://www.twitter.com/" target="_blank">twitter/janesmith</a></h4> -->
           <article id="tweet"><span class="load flash animated">LOADING...</span></article>
         </div>
+      </div>
 
-      </section>
+      <div class="bio">
+        <h1>Jessica Lord</h1>
+        <p>I am an open source designer and javascript developer living in Oakland, Ca. I work at GitHub, and it's hella rad. This is test text for this page. So, cool. Coffee, bikes and molé.</p>
+        <ul class="inline-list">
+          <li><a href="">Twitter</a></li>
+          <li><a href="">GitHub</a></li>
+          <li><a href="">Instagram</a></li>
+          <li><a href="">Dribble</a></li>
+        </ul>
+
+
+      </div>
 
     </div>
 
     <!-- Templates -->
     <script id="instagram" type="text/html">
       {{#rows}}
-        <span class="meta">{{instadate}}</span>
         <div class="one-gram"><p><img src="{{instasource}}" width="200"></p></div>
+        <span class="meta">{{instadate}}</span>
       {{/rows}}
     </script>
 
     <script id="tweet" type="text/html">
       {{#rows}}
-        <span class="meta">{{date}}</span>
         <p>{{{tweet}}}</p>
+        <span class="meta">{{date}}</span>
       {{/rows}}
     </script>
 

@@ -6,14 +6,17 @@ function buildInsta(data) {
 }
 
 function buildTweet(data) {
-  var two = data.slice(Math.max(data.length - 2, 1)).reverse()
-  var tweets = two.map(function(t) {
-    var tweet = {tweet: findLinks(t)}
-    tweet.date = t.date
-    return tweet
-  })
+  // var two = data.slice(Math.max(data.length - 2, 1)).reverse()
+  // var tweets = two.map(function(t) {
+  //   var tweet = {tweet: findLinks(t)}
+  //   tweet.date = t.date
+  //   return tweet
+  // })
+  var one = data.reverse()[0]
+  var t = {tweet : findLinks(one)}
+  t.date = one.date
   var tweet = Sheetsee.ich.tweet({
-    "rows": tweets
+    "rows": t
   }, {})
   document.getElementById('tweet').innerHTML = tweet
 }

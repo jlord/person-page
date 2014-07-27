@@ -1,5 +1,5 @@
 /* Stylez */
-body {font-family: Quicksand, Merriweather; margin: 0 auto; color: #333; border: 8px solid #CCFF26; line-height: 1.4em;}
+/*body {font-family: Quicksand, Merriweather; margin: 0 auto; color: #333; border: 8px solid #CCFF26; line-height: 1.4em;}
 
 a {color: #777; text-decoration: none;}
 a:hover {border-bottom: 1px solid #CCFF26; color: #222}
@@ -19,15 +19,15 @@ section {padding-top: 24px;}
 .name {font-family: Quicksand, "Ceviche One"; font-size: 60px;}
 .tleft {text-align: left;}
 .half {min-width: 270px; max-width: 320px; vertical-align: top; display: inline-block;}
-.right {float: right;}
+.right {float: right;}*/
 
 /* Twitter */
-#tweet p {font-size: 12px;}
+/*#tweet p {font-size: 12px;}*/
 
 /* Instagrams */
-#instagram {margin: 0 auto;}
+/*#instagram {margin: 0 auto;}
 .one-gram {display: inline;}
-.one-gram img {border: 5px solid #fafafa;}
+.one-gram img {border: 5px solid #fafafa;}*/
 
 
 /*!
@@ -35,7 +35,7 @@ Animate.css - http://daneden.me/animate
 Licensed under the MIT license
 */
 
-.animated {-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+.animated {-webkit-animation: 1s infinite; animation: 1s infinite; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
 
 @-webkit-keyframes flash {
   0%, 50%, 100% {
@@ -58,3 +58,18 @@ Licensed under the MIT license
 }
 
 .flash {-webkit-animation-name: flash; animation-name: flash;}
+
+body {font-family: Source Sans Pro; padding: 80px 0; line-height: 1.2em;}
+a {color: #A216FF;}
+
+h1 {font-weight: 900; font-size: 30px;}
+
+.one-gram img {border-radius: 999;}
+.social-bits {max-width: 300px; float: left; padding: 60px 20px 60px 0; border-right: 1px dotted #eee; text-align: center;}
+.bio {max-width: 400px; float: right; padding-left: 20px; vertical-align: middle;}
+.container {width: 750px; margin: 0 auto;}
+#tweet p {font-weight: 400; font-size: 12px;}
+.meta {font-family: Courier New; text-transform: uppercase; font-size: 10px;}
+
+.inline-list {list-style: none; margin: 0; padding: 0;}
+.inline-list li {display: inline-block;}
