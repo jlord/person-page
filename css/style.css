@@ -59,17 +59,19 @@ Licensed under the MIT license
 
 .flash {-webkit-animation-name: flash; animation-name: flash;}
 
-body {font-family: Source Sans Pro; padding: 80px 0; line-height: 1.2em;}
-a {color: #A216FF;}
+body {font-family: Source Sans Pro; padding: 80px 0; line-height: 1.2em; border-left: 10px solid #A216FF; color: #333; margin: 0;}
+a {color: #A216FF; text-decoration: none; font-weight: 900;}
 
 h1 {font-weight: 900; font-size: 30px;}
 
+#instagram {display: inline-block;}
 .one-gram img {border-radius: 999;}
-.social-bits {max-width: 300px; float: left; padding: 60px 20px 60px 0; border-right: 1px dotted #eee; text-align: center;}
-.bio {max-width: 400px; float: right; padding-left: 20px; vertical-align: middle;}
-.container {width: 750px; margin: 0 auto;}
+.social-bits {padding: 20px;}
+.bio {max-width: 400px; padding-left: 20px; vertical-align: middle;}
+.container {width: 750px; overflow: auto; float: left; }
 #tweet p {font-weight: 400; font-size: 12px;}
+#tweet {display: inline-block; max-width: 300px; padding-left: 40px; overflow: auto; position: relative;}
 .meta {font-family: Courier New; text-transform: uppercase; font-size: 10px;}
-
+.load {color: #eee; letter-spacing: .2em; font-size: 12px;}
 .inline-list {list-style: none; margin: 0; padding: 0;}
 .inline-list li {display: inline-block;}
