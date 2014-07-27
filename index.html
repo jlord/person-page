@@ -13,11 +13,8 @@
   <body>
     <!-- HTML -->
     <div class="container">
-      <article id="instagram"><span class="load flash animated">LOADING...</span></article>
-
-      <div class="bio">
-        <h1>Jessica Lord</h1>
-        <p>I am an open source designer and javascript developer living in Oakland, Ca. I work at GitHub, and it's hella rad. This is test text for this page. So, cool. Coffee, bikes and molé.</p>
+      <div class="left">
+        <article id="instagram"><span class="load flash animated">LOADING...</span></article>
         <ul class="inline-list">
           <li><a href="">Twitter</a></li>
           <li><a href="">GitHub</a></li>
@@ -26,14 +23,21 @@
         </ul>
       </div>
 
-      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
+      <div class="bio">
+        <h1>Jessica Lord</h1>
+        <p>I am an open source designer and javascript developer living in Oakland, Ca. I work at GitHub, and it's hella rad. This is test text for this page. So, cool. Coffee, bikes and molé.</p>
+        <article id="tweet"><span class="load flash animated">LOADING...</span></article>
+
+
+      </div>
+
 
     </div>
 
     <!-- Templates -->
     <script id="instagram" type="text/html">
       {{#rows}}
-        <div class="one-gram"><img src="{{instasource}}" width="150"></div>
+        <div class="one-gram"><img src="{{instasource}}" width="125"></div>
 
       {{/rows}}
     </script>

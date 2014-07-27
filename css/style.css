@@ -1,4 +1,4 @@
-body {font-family: Source Sans Pro; text-align: center; line-height: 1.2em; color: #333; margin: 0;}
+body {font-family: Source Sans Pro; padding-top: 60px; line-height: 1.2em; color: #333; margin: 0;}
 a {color: #96EBE1; text-decoration: none; }
 
 h1 {
@@ -8,28 +8,28 @@ font-family: Playfair Display;
 padding: 0 20px 20px 20px;
 line-height: 1.2em;
 margin-top: 0;
-border-bottom: 2px solid #333;
 display: inline-block;
 margin-bottom: 0px;}
 
-p {font-size: 23px; line-height: 1.3em;}
+p {font-size: 18px; line-height: 1.3em; font-family: courier new;}
 
-#instagram {margin: 0 auto; border-radius: 999px; margin-top: 30px; margin-bottom: 30px; background: #F7F7F7; height: 150px; width: 150px;}
+#instagram {margin: 0 auto; border-radius: 999px; margin-top: 132px; margin-bottom: 30px; background: #F7F7F7; height: 125px; width: 125px;}
 .one-gram img {border-radius: 999px;}
 #instagram .load {position: relative; top: 43%;}
-.container {width: 500px; margin: 0 auto; overflow: auto;}
+.container { box-sizing: border-box; max-width: 700px; height: 450px; margin: 0 auto; }
 .quote {font-weight: 900; font-size: 18px;}
-#tweet p {font-weight: 200; font-size: 18px;}
+#tweet p {font-weight: 150; font-size: 18px;}
 #tweet p a {color: #777; font-weight: 200; text-decoration: underline;}
 #tweet p a:hover {color: #17FFE4;}
 #tweet {padding: 20px; margin: 0 auto; margin-top: 20px; background: #F7F7F7; border-radius: 2px; color: #777;}
 .meta {font-family: Courier New; text-transform: uppercase; font-size: 10px;}
 .load {color: #eee; letter-spacing: .2em; font-size: 12px; }
 .inline-list {list-style: none; margin: 0; padding: 0;}
-.inline-list li {display: inline-block; }
-.inline-list li {padding-left: 20px;}
-.inline-list li a {padding: 2px 8px; border: 1px solid #96EBE1; border-radius: 2px; letter-spacing: .1em; text-transform: uppercase; font-weight: 400; font-size: 14px;}
+.inline-list li {display: inline-block; padding: 10px 0;width: 100%; margin:0; border-top: 1px solid #333;}
+.inline-list li a { padding: 2px 6px; font-family: courier new; letter-spacing: .1em; text-transform: uppercase; font-weight: 400; font-size: 14px;}
 .inline-list li a:hover {background: #96EBE1; color: #fff;}
+.left {box-sizing: border-box; text-align: center; max-width: 200px; float: left; border: 1px solid #333; height: 100%;}
+.bio { box-sizing: border-box; overflow: auto; border-top: 1px solid #333; border-right: 1px solid #333; border-bottom: 1px solid #333; padding: 40px 30px 0 30px; height: 100%;}
 
 /*!
 Animate.css - http://daneden.me/animate
