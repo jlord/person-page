@@ -4,7 +4,7 @@
 
 ![screenshot](screenshot.png)
 
-A simple one-page personal site with your Twitter and Instagram, from a spreadsheets using [IFTTT](http://www.ifttt.com).
+A simple personal site with your Twitter and Instagram, from a spreadsheets using [IFTTT](http://www.ifttt.com).
 
 This is a [Fork-n-Go](http://www.jlord.github.io/forkngo) project, so fork to get started making your own.
 
@@ -44,3 +44,7 @@ You can also give it any 'ol name and GitHub will host it using this patter: `us
 ### Style
 
 There are basic styles included in `style.css` but go wild and make it your own, try other things!
+
+### Bonus Style
+
+There is another style, on the `lines` branch. To access this style however you'll need to use your Terminal or GitHub desktop app to delete `gh-pages` and then rename `lines` to `gh-pages`.
