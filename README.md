@@ -1,6 +1,6 @@
 # Person Page
 
-![fork](https://raw.githubusercontent.com/jlord/forkngo/gh-pages/badges/bootstrap_a_color_purple.png)
+<img src="https://raw.githubusercontent.com/jlord/forkngo/gh-pages/badges/bootstrap_a_color_purple.png" width="200">
 
 ![screenshot](screenshot.png)
 
