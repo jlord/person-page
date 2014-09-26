@@ -28,7 +28,7 @@ You can also give it any 'ol name and GitHub will host it using this patter: `us
 
 ### Set up Twitter and Instagram with IFTTT
 
-1. Go to [ifttt.com](www.ifttt.com) and create an account, use these recipes for creating a row on a spreadsheet every time you Instagram or Tweet.
+1. Go to [ifttt.com](https://www.ifttt.com) and create an account, use these recipes for creating a row on a spreadsheet every time you Instagram or Tweet.
  - Twitter [recipe](https://ifttt.com/recipes/178972-all-your-tweets-in-a-google-spreadsheet)
  - Instagram [recipe](https://ifttt.com/recipes/178973-copy-any-instagram-picture-i-take-to-google-drive)
 2. Instagram or Tweet so that a spreadsheet is created. _It may take 10-15 mins for it to appear._
