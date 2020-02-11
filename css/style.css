@@ -1,5 +1,14 @@
-body {font-family: Source Sans Pro; text-align: center; line-height: 1.2em; color: #333; margin: 0;}
-a {color: #96EBE1; text-decoration: none; }
+body {font-family: Source Sans Pro;
+      text-align: center;
+      line-height: 1.2em;
+      color: #333;
+      margin: 0;
+      background: #fff;
+      padding: 12px;
+      box-sizing: border-box;}
+
+a {color: #9400D3;
+   text-decoration: none; }
 
 h1 {
 font-weight: 900;
@@ -12,50 +21,44 @@ border-bottom: 2px solid #333;
 display: inline-block;
 margin-bottom: 0px;}
 
-p {font-size: 23px; line-height: 1.3em;}
+p {font-size: 20px; line-height: 1.3em; color: #696969}
 
-#instagram {margin: 0 auto; border-radius: 999px; margin-top: 30px; margin-bottom: 30px; background: #F7F7F7; height: 150px; width: 150px;}
-.one-gram img {border-radius: 999px;}
-#instagram .load {position: relative; top: 43%;}
-.container {width: 500px; margin: 0 auto; overflow: auto;}
-.quote {font-weight: 900; font-size: 18px;}
-#tweet p {font-weight: 200; font-size: 18px;}
-#tweet p a {color: #777; font-weight: 200; text-decoration: underline;}
-#tweet p a:hover {color: #17FFE4;}
-#tweet {padding: 20px; margin: 0 auto; margin-top: 20px; background: #F7F7F7; border-radius: 2px; color: #777;}
-.meta {font-family: Courier New; text-transform: uppercase; font-size: 10px;}
-.load {color: #eee; letter-spacing: .2em; font-size: 12px; }
-.inline-list {list-style: none; margin: 0; padding: 0;}
+
+#header {margin: 0 auto;
+         border-radius: 999px; 
+         margin-top: 30px; 
+         margin-bottom: 30px; 
+         background: #F7F7F7; 
+         height: 150px; 
+         width: 150px;}
+
+.avatar img {border-radius: 999px;}
+
+.wrapper {box-sizing: border-box; 
+          background: rgb(250, 243, 253); 
+          box-shadow: 0 0 5px #888; 
+          box-shadow: 0 0 5px #888; 
+          height: 100%; overflow: auto; }
+
+.container {width: 500px; 
+            margin: 0 auto; 
+            overflow: visible;}
+            
+.inline-list {list-style: none; 
+              margin: 0; 
+              padding: 0;}
+
 .inline-list li {display: inline-block; }
+
 .inline-list li {padding-left: 20px;}
-.inline-list li a {padding: 2px 8px; border: 1px solid #96EBE1; border-radius: 2px; letter-spacing: .1em; text-transform: uppercase; font-weight: 400; font-size: 14px;}
-.inline-list li a:hover {background: #96EBE1; color: #fff;}
 
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license
-*/
+.inline-list li a {padding: 2px 8px; 
+                  border: 1px solid #9400D3; 
+                  border-radius: 2px; 
+                  letter-spacing: .1em; 
+                  text-transform: uppercase; 
+                  font-weight: 400; 
+                  font-size: 14px;}
 
-.animated {-webkit-animation: 1s infinite; animation: 1s infinite; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
-
-@-webkit-keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
-  }
-
-  25%, 75% {
-    opacity: 0;
-  }
-}
-
-@keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
-  }
-
-  25%, 75% {
-    opacity: 0;
-  }
-}
-
-.flash {-webkit-animation-name: flash; animation-name: flash;}
+.inline-list li a:hover {background: #9400D3; 
+                         color: #fff;}
