@@ -2,8 +2,6 @@
 
 <img src="https://raw.githubusercontent.com/jlord/forkngo/gh-pages/badges/bootstrap_a_color_purple.png" width="200">
 
-![screenshot](screenshot.png)
-
 A simple personal site with your Twitter and Instagram, from a spreadsheets using [IFTTT](http://www.ifttt.com).
 
 This is a [Fork-n-Go](http://www.jlord.github.io/forkngo) project, so fork to get started making your own.
