@@ -13,48 +13,26 @@
   <body>
     <!-- HTML -->
     <div class="container">
-      <article id="instagram"><span class="load flash animated">LOADING...</span></article>
+      <article id="instagram"><span class="load flash animated">LOADING...</span>
+	  <div class="avatar"><img src="avatar.jpg" width="150"></div>
+	  </article>
 
       <div class="bio">
-        <h1>Jessica Lord</h1>
-        <p>I am an open source designer and javascript developer living in Oakland, Ca. I work at GitHub, and it's hella rad. This is test text for this page. So, cool. Coffee, bikes and molé.</p>
+        <h1>Linn Maung Thant</h1>
+        <p>21 years old and Computing student. Main areas of interest in offensive security and cyber forensic. Living alone and loving it.</p>
         <ul class="inline-list">
-          <li><a href="">Twitter</a></li>
-          <li><a href="">GitHub</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Dribble</a></li>
+          <li><a href="https://www.twitter.com/linnmgthant">Twitter</a></li>
+          <li><a href="https://www.facebook.com/linnmaungthant">Facebook</a></li>
+          <li><a href="https://www.instagram.com/linn_maung">Instagram</a></li>
         </ul>
       </div>
 
-      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
-
-    </div>
-
-    <!-- Templates -->
-    <script id="instagram" type="text/html">
-      {{#rows}}
-        <div class="one-gram"><img src="{{instasource}}" width="150"></div>
-
-      {{/rows}}
-    </script>
-
     <script id="tweet" type="text/html">
       {{#rows}}
-        <p><span class="quote">&ldquo;</span> {{{tweet}}} <span class="quote"> &rdquo;</span></p>
+        <p><span class="quote">&ldquo;</span> Intelligence is the ability to avoid doing work, yet getting the work done. <span class="quote"> &rdquo;</span> - Linus Torvalds, Creator of Linux </p>
 
       {{/rows}}
     </script>
-
-    <!-- JavaScript -->
-      <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-          var URL  = '0Ao5u1U6KYND7dG9CRWdjeVB6dGYyN3c3RktocExUV1E' // insta
-          var URL2 = '0Ao5u1U6KYND7dDd2RTBwajZrT3pEc2p2LVVWc0o0WVE' // tweet
-
-          Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
-          Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
-        })
-      </script>
 
   </body>
 </html>
